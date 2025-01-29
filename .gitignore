@@ -1,0 +1,4 @@
+# Ignorar arquivos do editor
+.vscode/
+.idea/
+*.log

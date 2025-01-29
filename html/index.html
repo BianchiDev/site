@@ -2,104 +2,103 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Felipe Bianchi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Felipe Bianchi</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="mensagem" id="mensagem"></div>
-            <img src="/img/foto de capa.jpg" alt="imagem de capa" id="foto">
-            <div class="my-name" id="titulo"></div>
-        </div>
-        <div class="paragrafo">
-            <p class="texto">Sou formado em Analises e desenvolvimento de sistemas, possuo pós-graduação em
-                Arquitetura de Software com enfase em padrões de porojetos, possuo formação em banco de dado pelo
-                instituto federal de Roraima e pelo insituto federal de tocantins. Iniciei na programação como Dev
-                Jr Full Stack e caminhei junto ao desenvolvimento com tecnologias no banco de dados, no front - End,
-                no Back - End e em metodologias ágeis. Atualmente Desenvolvo atividade na educação em tecnologias e me
-                aperfeiçoando em JavaScript, HTML, CSS, PHP, Java, SQL, NoSQL e muito mais.
-            </p>
+  <div class="container">
+    <div class="header">
+      <div class="mensagem" id="mensagem"></div>
+      <img src="/img/foto de capa.jpg" alt="imagem de capa" id="foto">
+      <div class="my-name" id="titulo"></div>
+    </div>
+    <div class="paragrafo">
+      <p class="texto">Sou formado em Analises e desenvolvimento de sistemas, possuo pós-graduação em
+        Arquitetura de Software com enfase em padrões de porojetos, possuo formação em banco de dado pelo
+        instituto federal de Roraima e pelo insituto federal de tocantins. Iniciei na programação como Dev
+        Jr Full Stack e caminhei junto ao desenvolvimento com tecnologias no banco de dados, no front - End,
+        no Back - End e em metodologias ágeis. Atualmente Desenvolvo atividade na educação em tecnologias e me
+        aperfeiçoando em JavaScript, HTML, CSS, PHP, Java, SQL, NoSQL e muito mais.
+      </p>
 
-        </div>
-        <div class="container-foto">
-            <a href="/html/index/index.html">
-                <img class="imagem" src="/img/tascon.jpg" alt="Imagem na empresa tascon">
-            </a>
-            <a href="/html/jiujtsu/jiujitsu.html">
-                <img class="imagem" src="/img/trabalhoProfessor.jpeg"
-                    alt="Imagem na função professor na escola nacional cursos">
-            </a>
-            <a href="/html/mv/mv.html">
-                <img class="imagem" src="/img/tascon2.jpg" alt="">
-            </a>
-            <a href="/html/tascon/tascon.html">
-                <img class="imagem" src="/img/tascon3.jpg" alt="Imagem na empresa tascon">
-            </a>
-        </div>
-        <div>
+    </div>
+    <div class="container-foto">
+      <a href="/html/index/index.html">
+        <img class="imagem" src="/img/tascon.jpg" alt="Imagem na empresa tascon">
+      </a>
+      <a href="/html/jiujtsu/jiujitsu.html">
+        <img class="imagem" src="/img/trabalhoProfessor.jpeg"
+          alt="Imagem na função professor na escola nacional cursos">
+      </a>
+      <a href="/html/mv/mv.html">
+        <img class="imagem" src="/img/tascon2.jpg" alt="">
+      </a>
+      <a href="/html/tascon/tascon.html">
+        <img class="imagem" src="/img/tascon3.jpg" alt="Imagem na empresa tascon">
+      </a>
+    </div>
+    <div>
     </div>
 </body>
 <footer>
-    <audio src="/aud/Counter-Strike.mp3" controls loop muted> </audio>
-    <script>
-        const nome = "Meu nome é Felipe Bianchi, sou Desenvolvedor de Software";
-const mensagem = "Seja bem-vindo ao meu site!";
-const elementoNome = document.getElementById("titulo");
-const elementoMensagem = document.getElementById("mensagem");
+  <audio src="/aud/Counter-Strike.mp3" controls loop muted> </audio>
+  <script>
+    const nome = "Meu nome é Felipe Bianchi, sou Desenvolvedor de Software";
+    const mensagem = "Seja bem-vindo ao meu site!";
+    const elementoNome = document.getElementById("titulo");
+    const elementoMensagem = document.getElementById("mensagem");
 
-let i = 0; // Índice para digitação do nome
-let a = 0; // Índice para digitação da mensagem
+    let i = 0; // Índice para digitação do nome
+    let a = 0; // Índice para digitação da mensagem
 
-function digitarNome() {
-  if (elementoNome) { // Verifica se o elemento existe
-    if (i < nome.length) {
-      elementoNome.innerHTML += nome.charAt(i);
-      i++;
-      setTimeout(digitarNome, 50);
-    } else {
-      i = 0;
-     setTimeout(() => {
-        elementoNome.innerHTML = ""; // Limpa o texto após completar
-     digitarNome(); // Aguarda 10 segundos
-     },  50000 )
+    function digitarNome() {
+      if (elementoNome) { // Verifica se o elemento existe
+        if (i < nome.length) {
+          elementoNome.innerHTML += nome.charAt(i);
+          i++;
+          setTimeout(digitarNome, 50);
+        } else {
+          i = 0;
+          setTimeout(() => {
+            elementoNome.innerHTML = ""; // Limpa o texto após completar
+            digitarNome(); // Aguarda 10 segundos
+          }, 50000)
+        }
+      } else {
+        console.error("Elemento 'titulo' não encontrado.");
+      }
     }
-  } else {
-    console.error("Elemento 'titulo' não encontrado.");
-  }
-}
 
-function digitarMensagem() {
-  if (elementoMensagem) { // Verifica se o elemento existe
-    if (a < mensagem.length) {
-      elementoMensagem.innerHTML += mensagem.charAt(a);
-      a++;
-      setTimeout(digitarMensagem, 50); // Velocidade de digitação
-    } else {
-      a = 0;
-      setTimeout(() => {
-        elementoMensagem.innerHTML = ""; // Limpa o texto após completar
-     digitarMensagem(); // Aguarda 10 segundos
-     },10000 )
+    function digitarMensagem() {
+      if (elementoMensagem) { // Verifica se o elemento existe
+        if (a < mensagem.length) {
+          elementoMensagem.innerHTML += mensagem.charAt(a);
+          a++;
+          setTimeout(digitarMensagem, 50); // Velocidade de digitação
+        } else {
+          a = 0;
+          setTimeout(() => {
+            elementoMensagem.innerHTML = ""; // Limpa o texto após completar
+            digitarMensagem(); // Aguarda 10 segundos
+          }, 10000)
+        }
+      } else {
+        console.error("Elemento 'mensagem' não encontrado.");
+      }
     }
-  } else {
-    console.error("Elemento 'mensagem' não encontrado.");
-  }
-}
 
-document.addEventListener("click", function () {
-  const audio = document.querySelector("audio");
-  audio.muted = false;
-});
+    document.addEventListener("click", function () {
+      const audio = document.querySelector("audio");
+      audio.muted = false;
+    });
 
-// Inicia as funções de digitação
-digitarNome();
-digitarMensagem();
-
-    </script>
+    // Inicia as funções de digitação
+    digitarNome();
+    digitarMensagem();
+  </script>
 </footer>
 
 </html>
