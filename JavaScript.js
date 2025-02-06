@@ -1,4 +1,4 @@
-const nome = "Meu nome é Felipe Bianchi, sou Desenvolvedor de Software";
+const nome = "Meu nome é Felipe, sou faixa marrom de Jiujitsu";
 const mensagem = "Seja bem-vindo ao meu site!";
 const elementoNome = document.getElementById("titulo");
 const elementoMensagem = document.getElementById("mensagem");
