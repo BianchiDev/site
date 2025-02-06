@@ -1,5 +1,6 @@
-const nome = "Meu nome é Felipe, sou faixa marrom de Jiujitsu";
-const mensagem = "Seja bem-vindo ao meu site!";
+// const nome = "Meu nome é Felipe, sou faixa marrom de Jiujitsu";
+// const mensagem = "Seja bem-vindo ao meu site!";
+const mensagem =" Atleta de jiu-jitsu, faixa marrom formado pela Nova União - PE"
 const elementoNome = document.getElementById("titulo");
 const elementoMensagem = document.getElementById("mensagem");
 

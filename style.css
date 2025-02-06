@@ -46,7 +46,7 @@ body {
 .mensagem {
     color: white;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 1.6rem;
     margin-top: 2rem; /* Ajustado para melhor espaçamento */
     opacity: 0.75;
 }
